@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+import Nav from './components/Nav/Nav.js';
+import Carousel from './components/Carousel/Carousel.js';
 
-    </div>
-  );
+class App extends Component {
+  state = {
+  }
+ 
+  render () {
+    return (
+      <div className="App">
+        <Carousel/>,
+        <Nav/>
+      </div>
+    )
+  }
 }
 
 export default App;
