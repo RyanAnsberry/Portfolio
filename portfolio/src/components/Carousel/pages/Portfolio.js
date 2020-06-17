@@ -3,8 +3,8 @@ import './Page.css'
 
 export default function Portfolio() {
     return (
-        <div className="Portfolio page">
+        <section className="Portfolio page">
             <h1>Portfolio</h1>            
-        </div>
+        </section>
     )
 }

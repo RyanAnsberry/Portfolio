@@ -6,7 +6,7 @@ import Slide from './Slide.js';
 export default function Carousel(props) {
     return (
         <div className="Carousel-container">
-            <Slide/>
+            <Slide {...props}/>
         </div>
     );
 }

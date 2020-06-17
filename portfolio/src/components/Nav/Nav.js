@@ -17,10 +17,10 @@ export default function Nav(props) {
     return (
         <div className="Nav">
             <div className="link-container">
-                <button className="Home nav-button current-button" onClick={handleClick}>HOME</button>
-                <button className="About nav-button" onClick={handleClick}>ABOUT</button>
-                <button className="Portfolio nav-button" onClick={handleClick}>PORTFOLIO</button>
-                <button className="Contact nav-button" onClick={handleClick}>CONTACT</button>
+                <button className="Home home-nav-button nav-button current-button" onClick={handleClick}>HOME</button>
+                <button className="About about-nav-button nav-button" onClick={handleClick}>ABOUT</button>
+                <button className="Portfolio port-nav-button nav-button" onClick={handleClick}>PORTFOLIO</button>
+                <button className="Contact contact-nav-button nav-button" onClick={handleClick}>CONTACT</button>
             </div>
         </div>
     );

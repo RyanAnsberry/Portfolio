@@ -7,11 +7,10 @@ import Portfolio from './pages/Portfolio.js';
 import Contact from './pages/Contact.js';
 
 
-export default function Slide() {
-    
+export default function Slide(props) {
     return (
         <div className="Slide">
-            <Home />,
+            <Home {...props}/>,
             <About />,
             <Portfolio />,
             <Contact />

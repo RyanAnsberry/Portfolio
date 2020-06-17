@@ -36,14 +36,15 @@ class App extends Component {
         slide.style.transform = 'translateX(-75%)';
         slide.style.transition = 'transform 0.5s ease-in-out';
         break;
+      default:
+        return;
     }
   }
  
   render () {
-    const { currentPage } = this.state
     return (
       <div className="App">
-        <Carousel />,
+        <Carousel changePage={ this.changePage } setCurrentPage={ this.setCurrentPage } />,
         <Nav changePage={ this.changePage } setCurrentPage={ this.setCurrentPage } />
       </div>
     )
