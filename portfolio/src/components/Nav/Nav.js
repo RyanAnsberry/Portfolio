@@ -1,24 +1,26 @@
 import React from 'react';
 import './Nav.css';
 
-export default function Nav() {
+export default function Nav(props) {
     function handleClick(e) {
         e.preventDefault();
         // vars to hold prev and next current button
         const currentButton = document.querySelector('.current-button');
-        const nextPage = e.target
+        const nextPage = e.target.classList[0]
+        props.setCurrentPage(nextPage)
+        props.changePage(nextPage)
         // toggle current button
         currentButton.classList.toggle('current-button')
-        nextPage.classList.toggle('current-button')
+        e.target.classList.toggle('current-button')
     }
 
     return (
         <div className="Nav">
             <div className="link-container">
-                <button className="nav-button current-button" onClick={handleClick}>HOME</button>
-                <button className="nav-button" onClick={handleClick}>ABOUT</button>
-                <button className="nav-button" onClick={handleClick}>PORTFOLIO</button>
-                <button className="nav-button" onClick={handleClick}>CONTACT</button>
+                <button className="Home nav-button current-button" onClick={handleClick}>HOME</button>
+                <button className="About nav-button" onClick={handleClick}>ABOUT</button>
+                <button className="Portfolio nav-button" onClick={handleClick}>PORTFOLIO</button>
+                <button className="Contact nav-button" onClick={handleClick}>CONTACT</button>
             </div>
         </div>
     );

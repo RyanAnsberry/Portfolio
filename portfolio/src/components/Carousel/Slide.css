@@ -1,0 +1,8 @@
+.Slide {
+    width: 400%;
+    height: 92%;
+    position: absolute;
+    display: flex;
+    left: 0%;
+    overflow: hidden;
+}
