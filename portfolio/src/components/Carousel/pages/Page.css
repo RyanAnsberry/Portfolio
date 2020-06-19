@@ -22,8 +22,8 @@
     font-family: 'Abel', sans-serif;
 }
 
-.full-name {
-    color:orange;
+.home-full-name {
+    color:cyan;
 }
 
 .home-button {
@@ -33,14 +33,113 @@
     background: #222;
     font-size: 1.6rem;
     font-family: 'Abel', sans-serif;
-    color: #ccc;
-    border: 2px solid orange;
+    color: white;
+    border: 2px solid cyan;
 }
 
 .home-button:hover {
-    color:white;
-    border-color: cyan;
+    border-color: orange;
     cursor: pointer;
     transform: scale(1.05);
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* About */
+.about-page-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-full-name {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Abel', sans-serif;
+}
+
+.about-portrait-container {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-portrait-frame {
+    width: 240px;
+    height: 240px;
+    background: #333;
+    border-radius: 120px;
+
+}
+
+.about-information-container {
+    width: 500px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-mission-statement-container {
+    width: 240px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-mission-statement {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.about-skills-container {
+    width: 240px;
+    height: 180px;
+}
+
+.about-skills-header {
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Abel', sans-serif;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+
+.about-skills-list {
+    width: 120px;
+    height:120px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: disc;
+}
+
+.about-skill {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Abel', sans-serif;
+}
+
+.about-links-container {
+    width: 360px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-link {
+    color: cyan;
+    font-size: 3rem;
+}
+
+.about-link:hover {
+    color: orange;
 }

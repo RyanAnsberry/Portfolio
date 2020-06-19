@@ -15,7 +15,7 @@ export default function Home(props) {
     return (
         <section className="Home page">
             <div className="home-text-container">
-                <h1 className="home-header">Hello, I'm <span className="full-name">Ryan Ansberry.</span></h1>
+                <h1 className="home-header">Hello, I'm <span className="home-full-name">Ryan Ansberry.</span></h1>
                 <h1 className="home-header">I'm a full-stack web developer.</h1>
                 <button className="home-button" onClick={handleClick}>View My Work</button>
             </div>

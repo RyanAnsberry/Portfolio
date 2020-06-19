@@ -9,7 +9,7 @@
 
 .link-container {
     height: 100%;
-    width: 520px;
+    width: 580px;
     padding-left: 60px;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
 }
 
 .nav-button {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: white;
     background: transparent;
     border: none;
@@ -26,6 +26,7 @@
 
 .nav-button:hover {
     cursor: pointer;
+    color: orange;
 }
 
 .nav-button:focus {
