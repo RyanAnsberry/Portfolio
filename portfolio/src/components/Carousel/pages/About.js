@@ -16,14 +16,6 @@ export default function About() {
                 </div>
 
                 <div className="about-information-container">
-                    <div className="about-mission-statement-container">
-                        <p className="about-mission-statement">
-                            "My mission statement is to state my mission. 
-                            My mission statement is to state my mission. 
-                            My mission statement is to state my mission."
-                        </p>
-                    </div>
-
                     <div className="about-skills-container">
                         <h3 className="about-skills-header">Skills</h3> 
                         <ul className="about-skills-list">
@@ -35,13 +27,19 @@ export default function About() {
                         </ul>
                     </div>
 
+                    <div className="about-mission-statement-container">
+                        <p className="about-mission-statement">
+                            "Imma gonna win!!!"
+                        </p>
+                    </div>
+
                 </div>
 
 
                 <div className="about-links-container">
-                    <a href="" className="about-link resume"><RiPagesLine/></a>
-                    <a href="" className="about-link github"><FaGithub/></a>
-                    <a href="" className="about-link linkedin"><FaLinkedin/></a>
+                    <a href="" target="_blank" className="about-link resume"><RiPagesLine/></a>
+                    <a href="https://github.com/RyanAnsberry" target="_blank" className="about-link github"><FaGithub/></a>
+                    <a href="https://www.linkedin.com/in/ryan-ansberry-11a55415a/" target="_blank" className="about-link linkedin"><FaLinkedin/></a>
                 </div>
 
             </div>          

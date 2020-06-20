@@ -10,8 +10,8 @@ import Contact from './pages/Contact.js';
 export default function Slide(props) {
     return (
         <div className="Slide">
-            <Home {...props}/>,
-            <About />,
+            {/* <Home {...props}/>, */}
+            {/* <About />, */}
             <Portfolio />,
             <Contact />
         </div>

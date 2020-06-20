@@ -29,6 +29,10 @@
     color: orange;
 }
 
+.nav-button:active {
+    color: cyan;
+}
+
 .nav-button:focus {
     outline: none;
 }
