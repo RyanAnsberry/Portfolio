@@ -11,7 +11,7 @@ export default function About() {
 
                 <div className="about-portrait-container">
                     <div className="about-portrait-frame">
-                        <img className="about-portrait-image" src=""/>
+                        <img className="about-portrait-image" src="" alt="Ryan Ansberry Portrait"/>
                     </div>
                 </div>
 
@@ -37,9 +37,9 @@ export default function About() {
 
 
                 <div className="about-links-container">
-                    <a href="" target="_blank" className="about-link resume"><RiPagesLine/></a>
-                    <a href="https://github.com/RyanAnsberry" target="_blank" className="about-link github"><FaGithub/></a>
-                    <a href="https://www.linkedin.com/in/ryan-ansberry-11a55415a/" target="_blank" className="about-link linkedin"><FaLinkedin/></a>
+                    <a href="localhost:3000" target="_blank" rel="noopener noreferrer" className="about-link resume"><RiPagesLine/></a>
+                    <a href="https://github.com/RyanAnsberry" target="_blank" rel="noopener noreferrer" className="about-link github"><FaGithub/></a>
+                    <a href="https://www.linkedin.com/in/ryan-ansberry-11a55415a/" target="_blank" rel="noopener noreferrer" className="about-link linkedin"><FaLinkedin/></a>
                 </div>
 
             </div>          

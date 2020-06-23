@@ -2,7 +2,6 @@ import React from 'react';
 import './Page.css';
 
 export default function ProjectCard(props) {
-    console.log(props)
     return (
         <div className="project-card-container">
             <div className="project-card-overview">
@@ -16,19 +15,19 @@ export default function ProjectCard(props) {
                     <h3 className="project-card-tech-header">Technical Aspects:</h3>
                     <ul className="project-card-tech-list">
                         {props.tech.map(tech => 
-                            <li className="project-card-tech">{tech}</li>
+                            <li className="project-card-tech" key={tech}>{tech}</li>
                         )}
                     </ul>
                 </div>
 
-                <a hre={props.deployed} className="project-card-deploy-link"></a>
-                <a hre={props.repo} className="project-card-repo-link"></a>
+                <a href={props.deployed} className="project-card-deploy-link">Deployed</a>
+                <a href={props.repo} className="project-card-repo-link">Repo</a>
 
                 <div className="project-card-achievements-container">
                     <h3 className="project-card-achievements-header">Achievements:</h3>
                     <ul className="project-card-achievement-list">
                         {props.achievements.map(achievement => 
-                            <li className="project-card-achievement">{achievement}</li>
+                            <li className="project-card-achievement" key={achievement}>{achievement}</li>
                         )}
                     </ul>
                 </div>
