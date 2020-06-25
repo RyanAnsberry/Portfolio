@@ -19,9 +19,11 @@ export default function ProjectCard(props) {
                         )}
                     </ul>
                 </div>
-
-                <a href={props.deployed} className="project-card-deploy-link">Deployed</a>
-                <a href={props.repo} className="project-card-repo-link">Repo</a>
+                
+                <div className="project-card-links-container">
+                    <a href={props.deployed} className="project-card-deploy-link">Deployed</a>
+                    <a href={props.repo} className="project-card-repo-link">Repo</a>
+                </div>
 
                 <div className="project-card-achievements-container">
                     <h3 className="project-card-achievements-header">Achievements:</h3>
