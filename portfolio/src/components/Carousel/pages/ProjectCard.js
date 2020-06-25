@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 import './Page.css';
 
 export default function ProjectCard(props) {
@@ -6,7 +7,9 @@ export default function ProjectCard(props) {
         <div className="project-card-container">
             <div className="project-card-overview">
                 <h1 className="project-card-title">{props.title}</h1>
-                <img className="project-card-thumbnail" src={props.thumbnail} alt={props.title}/>
+                <div className="project-card-thumbnail-frame">
+                    <img className="project-card-thumbnail" src={props.thumbnail} alt={props.title}/>
+                </div>
             </div>
 
             <div className="project-card-information">
@@ -20,11 +23,6 @@ export default function ProjectCard(props) {
                     </ul>
                 </div>
                 
-                <div className="project-card-links-container">
-                    <a href={props.deployed} className="project-card-deploy-link">Deployed</a>
-                    <a href={props.repo} className="project-card-repo-link">Repo</a>
-                </div>
-
                 <div className="project-card-achievements-container">
                     <h3 className="project-card-achievements-header">Achievements:</h3>
                     <ul className="project-card-achievement-list">
@@ -32,6 +30,11 @@ export default function ProjectCard(props) {
                             <li className="project-card-achievement" key={achievement}>{achievement}</li>
                         )}
                     </ul>
+                </div>
+                
+                <div className="project-card-links-container">
+                    <a href={props.deployed} className="project-card-deploy-link">Deployed</a>
+                    <a href={props.repo} className="project-card-repo-link"><FaGithub/></a>
                 </div>
             </div>
         </div>

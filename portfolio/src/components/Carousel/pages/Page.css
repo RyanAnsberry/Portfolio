@@ -73,7 +73,9 @@
     height: 240px;
     background: #333;
     border-radius: 120px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-information-container {
@@ -170,16 +172,19 @@
 
 .portfolio-projects-header {
     color: white;
-    font-size: 3rem;
+    font-size: 3.2rem;
+    font-weight: bold;
     font-family: 'Abel', sans-serif;
-    padding: 10px 0;
-    border: 2px solid #777;
-    border-top: none;
-    width: 800px;
+    width: 820px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #777;
 }
 
 .portfolio-project-slide {
-    width: 800px;
+    width: 820px;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -206,7 +211,7 @@
 }
 
 .portfolio-project-slide::-webkit-scrollbar-thumb {
-    background: cyan; 
+    background: cyan;
 }
 
 .portfolio-project-slide::-webkit-scrollbar-thumb:hover {
@@ -220,13 +225,78 @@
 
 /* ~~~~~~~~~~~~~ Project Card ~~~~~~~~~~~~~ */
 .project-card-container {
-    width: 700px;
-    height: 280px;
+    width: 720px;
+    height: 240px;
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #222;
+}
+
+.project-card-overview {
+    width: 180px;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card-title {
+    font-size: 1.6rem;
+    color: cyan;
+    font-family: 'Abel', sans-serif;
+}
+
+.project-card-thumbnail-frame {
+    width: 140px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+
+.project-card-thumbnail-frame:hover {
+    cursor: pointer;
+    border: 1px solid cyan;
+}
+
+.project-card-thumbnail {
+    font-size: .8rem;
+    color: #999;
+    font-family: 'Abel', sans-serif;
+}
+
+.project-card-information {
+    width: 540px;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card-description {
+    width: 160px;
+    height: 100%;
+}
+
+.project-card-tech-container {
+    width: 160px;
+    height: 100%;
+}
+
+.project-card-achievements-container {
+    width: 160px;
+    height: 100%;
+}
+
+.project-card-links-container {
+    width: 60px;
+    height: 100%;
 }
 
 /* ~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~ */
