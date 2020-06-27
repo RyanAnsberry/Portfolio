@@ -10,9 +10,9 @@ export default function Portfolio() {
                 <h1 className="portfolio-projects-header">PORTFOLIO</h1>
                 <div className="portfolio-project-slide">
                     <div className="portfolio-projects-container">
-                        <ProjectCard title="Project Title" thumbnail="" description="Description" tech={["React", "React-Router", "Redux"]} deployed="" repo="" achievements={["Did it", "Good Stuff"]}/>
-                        <ProjectCard title="Project Title" thumbnail="" description="Description" tech={["React", "React-Router", "Redux"]} deployed="" repo="" achievements={["Did it", "Good Stuff"]}/>
-                        <ProjectCard title="Project Title" thumbnail="" description="Description" tech={["React", "React-Router", "Redux"]} deployed="" repo="" achievements={["Did it", "Good Stuff"]}/>
+                        <ProjectCard title="Project Title" thumbnail="" description="Description of this project." tech={["React", "React-Router", "Redux"]} deployed="" repo="" achievements={["Did it", "Good Stuff"]}/>
+                        <ProjectCard title="Project Title" thumbnail="" description="Description of this project." tech={["React", "React-Router", "Redux"]} deployed="" repo="" achievements={["Did it", "Good Stuff"]}/>
+                        <ProjectCard title="Project Title" thumbnail="" description="Description of this project." tech={["React", "React-Router", "Redux"]} deployed="" repo="" achievements={["Did it", "Good Stuff"]}/>
 
                     </div>
                 </div>
