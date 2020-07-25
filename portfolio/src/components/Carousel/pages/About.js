@@ -29,7 +29,7 @@ export default function About() {
 
                     <div className="about-mission-statement-container">
                         <p className="about-mission-statement">
-                            "Imma gonna win!!!"
+                            Mission Statement
                         </p>
                     </div>
 
